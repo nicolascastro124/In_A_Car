@@ -1,0 +1,110 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.Master.cs" Inherits="In_A_Car.Site1" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <title>IN-A-CAR</title>
+
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+    <!-- Third party plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <link href="../css/adminhome.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+
+<body>
+    <header>
+        <div class="header">
+
+            <h1>Panel de administrador</h1>
+            <div class="optionsBar">
+                <p>Chile, fecha de sistema</p>
+                <span>|</span>
+                <span class="user"><asp:Label ID="lbNombre" runat="server" Text="Label"></asp:Label></span>
+                <img class="photouser" src="img/user.png" alt="Usuario"/>
+                <a href="#"><img class="close" src="img/salir.png" alt="Salir del sistema" title="Salir"/></a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="indexAdmin.aspx">Inicio</a></li>
+                <li class="principal">
+                    <a href="#">Usuarios</a>
+                    <ul>
+                        <li><a href="crearUsuario.aspx">Nuevo Usuario</a></li>
+                        <li><a href="listarUsuarios.aspx">Lista de Usuarios</a></li>
+                    </ul>
+                </li>
+                <li class="principal">
+                    <a href="#">Clientes</a>
+                    <ul>
+                        <li><a href="#">Nuevo Cliente</a></li>
+                        <li><a href="#">Lista de Clientes</a></li>
+                    </ul>
+                </li>
+                <li class="principal">
+                    <a href="#">Proveedores</a>
+                    <ul>
+                        <li><a href="#">Nuevo Proveedor</a></li>
+                        <li><a href="#">Lista de Proveedores</a></li>
+                    </ul>
+                </li>
+                <li class="principal">
+                    <a href="#">Vehiculos</a>
+                    <ul>
+                        <li><a href="#">Nuevo Vehiculo</a></li>
+                        <li><a href="#">Lista de Vehiculos</a></li>
+                    </ul>
+                </li>
+                <li class="principal">
+                    <a href="#">Facturas</a>
+                    <ul>
+                        <li><a href="#">Nuevo Factura</a></li>
+                        <li><a href="#">Facturas</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+    </header>
+
+    
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+
+
+</body>
+</html>
+
+
